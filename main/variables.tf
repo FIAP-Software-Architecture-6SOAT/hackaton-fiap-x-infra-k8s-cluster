@@ -38,6 +38,16 @@ variable "aws_session_token" {
   description = "The AWS Session Token"
 }
 
+variable "aws_access_key_id_ses" {
+  type        = string
+  description = "The AWS Access Key ID for Amazon SES"
+}
+
+variable "aws_secret_access_key_ses" {
+  type        = string
+  description = "The AWS Secret Access Key for Amazon SES"
+}
+
 variable "queue_url" {
   type        = string
   description = "The SQS Queue URL"
