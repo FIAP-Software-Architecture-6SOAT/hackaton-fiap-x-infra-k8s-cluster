@@ -18,6 +18,11 @@ variable "mongodb_connection_string" {
   description = "The MongoDB connnection string"
 }
 
+variable "mongodb_db_name" {
+  type        = string
+  description = "The MongoDB Database Name"
+}
+
 variable "aws_access_key_id" {
   type        = string
   description = "The AWS Access Key ID"
@@ -33,7 +38,22 @@ variable "aws_session_token" {
   description = "The AWS Session Token"
 }
 
-variable "sqs_queue_url" {
+variable "aws_access_key_id_ses" {
+  type        = string
+  description = "The AWS Access Key ID for Amazon SES"
+}
+
+variable "aws_secret_access_key_ses" {
+  type        = string
+  description = "The AWS Secret Access Key for Amazon SES"
+}
+
+variable "queue_url" {
   type        = string
   description = "The SQS Queue URL"
+}
+
+variable "jwt_secret" {
+  type        = string
+  description = "The JWT Secret"
 }
