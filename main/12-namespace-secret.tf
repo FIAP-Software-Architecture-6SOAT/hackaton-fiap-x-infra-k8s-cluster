@@ -25,6 +25,8 @@ resource "kubernetes_secret" "fiap_x_secret" {
     MONGODB_CONNECTION_STRING = var.mongodb_connection_string
     JWT_SECRET                = var.jwt_secret
     QUEUE_URL                 = var.queue_url
+    BUCKET_VIDEOS_NAME        = var.bucket_videos_name
+    BUCKET_IMAGES_ZIP_NAME    = var.bucket_images_zip_name
   }
 
   type       = "Opaque"
@@ -54,6 +56,8 @@ resource "kubernetes_secret" "fiap_x_job_creator_secret" {
     MONGODB_CONNECTION_STRING = var.mongodb_connection_string
     MONGODB_DB_NAME           = var.mongodb_db_name
     QUEUE_URL                 = var.queue_url
+    BUCKET_VIDEOS_NAME        = var.bucket_videos_name
+    BUCKET_IMAGES_ZIP_NAME    = var.bucket_images_zip_name
   }
 
   type       = "Opaque"
