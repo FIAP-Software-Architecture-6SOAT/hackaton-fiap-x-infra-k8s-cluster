@@ -57,3 +57,15 @@ variable "jwt_secret" {
   type        = string
   description = "The JWT Secret"
 }
+
+variable "bucket_videos_name" {
+  type        = string
+  description = "The S3 Bucket Name for Videos"
+  default     = "videos-process"
+}
+
+variable "bucket_images_zip_name" {
+  type        = string
+  description = "The S3 Bucket Name for Images Zip"
+  default     = "videos-images-zip"
+}
