@@ -48,14 +48,14 @@ variable "aws_secret_access_key_ses" {
   description = "The AWS Secret Access Key for Amazon SES"
 }
 
-variable "queue_url" {
-  type        = string
-  description = "The SQS Queue URL"
-}
-
 variable "jwt_secret" {
   type        = string
   description = "The JWT Secret"
+}
+
+variable "queue_url" {
+  type        = string
+  description = "The SQS Queue URL"
 }
 
 variable "bucket_videos_name" {
